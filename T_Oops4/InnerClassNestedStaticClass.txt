@@ -1,0 +1,13 @@
+A non-static nested class is class within another class. It has access to members of
+the enclosing class (outer class). It is commonly known as inner class.
+
+Since the inner class exists within the outer class, we must instantiate the outer class
+first in order to instantiate inner class.
+
+Unlike inner class, a static nested class cannot access the member variables of the
+outer class. It is because the static nested class doesn't require us to create an
+instance of the outer class.
+
+Using the nested class makes our code more readable and provide better encapsulation
+
+

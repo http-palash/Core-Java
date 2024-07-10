@@ -1,0 +1,9 @@
+Polymorphism allows us to perform single action in different ways.
+In other words, polymorphism allows us to define one interface and have multiple
+implementations.
+The word "poly" means many and "morphs" means forms, So it means many forms.
+
+There are two types of polymorphism.
+
+Compile time  : method overloading ()
+Runtime : method Over-ridding (child class over-ridding methods)

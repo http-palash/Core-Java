@@ -1,0 +1,14 @@
+Functional Interface (Introduced in java 8)
+
+An interface that contains exactly one abstract method is known as functional interface
+
+Functional interfaces introduced in Java 8 allow us to use a lambda expression to
+initiate the interfaces method and avoid using lengthy codes for the anonymous class
+implementation
+
+// interface
+@V_FunctionalInterface
+interface Sample{
+    //abstract method
+    int calculate(int val);
+}

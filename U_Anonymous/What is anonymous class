@@ -1,0 +1,15 @@
+
+U_Anonymous class in Java
+
+In java a class can contain another class known as nested class. It is possible to create a nested class
+without giving any name.
+
+A nested class that doesn't have any name is known as anonymous class.
+
+U_Anonymous classes usually exted=nd subclasses or implements interfaces
+Here Type can be
+
+ 1.A superclass that an anonymous class extends
+ 2.An interface that an anonymous class extends
+
+

@@ -1,0 +1,76 @@
+1.Java packages
+2.Access modifiers
+3.Java R_Encapsulation
+4.Data Hiding
+5.The static keyword
+
+
+Java packages:
+Helps in encapsulation
+
+
+A package is simply a conatiner that groups related types(Java classes
+, interfaces, enumeration, and annotations).
+
+To define a package in java, we use the keyword package.
+Java uses file system directories to store packages,
+
+for ex:
+|__com
+  |__test
+    |__Test.java
+
+package com.test;
+
+class Test{
+    public static void main(J_String[] args){
+        System.out.println("A_Basic_Java_Program.Hello Java");
+    }
+}
+
+
+Importing a package :
+
+Java has an import statement that allows to import entire package or use only certain
+classes and interfaces defined in the package
+
+import java.util.Date; // imports only Date class
+import java.io.*;      // imports everything inside java.io package
+
+In java the import statement is written directly after the package statement (if it exists)
+and before the class definition
+
+package package.name;
+import package.ClassName; // Only import a class
+
+
+
+
+/*
+  Java Access Modifiers:
+  In java access modifiers are used to set accessibility (visibility) of classes,
+  interfaces, variables, methods, constructors, data members, and the setter methods.
+
+  For example:
+
+  class Animal{
+    public void method1(){...}
+
+    private void method2{...}
+  }
+
+  Access modifier  Same-class   Same-package(subclass)  Same-package(non-subclass)   Different-Package-subclass   Different-package(non-subclass)
+
+  Default
+ (Package private) Yes          Yes                     Yes                          No                           No
+
+  Private          Yes          No                      No                           No                           No
+  Protected        Yes          Yes                     Yes                          Yes                          No
+  Public           Yes          Yes                     Yes                          Yes                          Yes
+ */
+
+
+Public - accessible to all package and subclass
+Private - accessible to class itself
+Protected - accessible to subclass
+Default - accessible to same package only

@@ -1,0 +1,10 @@
+1.How Java Memory works
+2.Java Object Class
+3.Java Polymorphism
+
+
+Heap memory - actual data, strings, objects
+stack memory - functions and references, variables
+
+Heap memory - not thread safe synchronization needed
+stack memory - thread safe no synchronization needed

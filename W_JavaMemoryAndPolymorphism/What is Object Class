@@ -1,0 +1,19 @@
+Java Object Class
+
+Object class is present in java.lang package.
+Every class in java is directly derived from the object class.
+If a class does not extend any other class then it is direct child of the object and if
+extends another class then it is indirectly derived.
+Therefore the object class methods are available in all java classes.
+Hence Object class acts as a root of the inheritance in any java program
+
+Object Class:
+    getClass()
+    hashCode()
+    wait()
+    toString()
+    clone()
+    equals()
+    finalize()
+    notify()
+    notifyall()
