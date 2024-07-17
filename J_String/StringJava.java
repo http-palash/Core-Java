@@ -13,15 +13,16 @@ public class StringJava {
     public static void main(String[] args) {
 
         /*
-            In java string is basically an object that represents a sequence of char values
-            An array of characters works same as java strings
+            In java string is basically an object that represents a sequence
+            of char values. An array of characters works same as java strings.
 
+            String is non primitive datatype create by primtive datatype
             How to create
             String literal
             By new literal
 
-            reference - stack memory
-            actual content goes to - heap memory
+            Reference - stack memory
+            Actual content goes to - heap memory
 
             under heap we have string constant area/pool
 
@@ -35,36 +36,50 @@ public class StringJava {
 
          */
 
+
+            //  The String object containing "Palash" is created on heap
+            //  The reference variable newNameObj is created on stack
+            //  Heap is managed by jvm and its where garbage collection takes place
+
+        // reference variable local var (newNameObj) & method calls are stored in stack
+        // actual object stored in heap
+
         String name = "Palash";
         //name = "A";
         String sameName = "Palash";// In string pool
-
-        String newName = new String("Palash"); // In simple heap
+        String newNameObj = new String("Palash");
 
         System.out.println(name);
-        System.out.println(newName);
-
+        System.out.println(newNameObj);
         System.out.println("Palash");
 
         // Comparing string in java
-
         if(name == sameName){
             System.out.println("Same");
         }
 
-        if(name == newName){
-            System.out.println("Same ");
+        if(name == "Palash"){
+            System.out.println("name == \"Palash\":Same");
+        }
+        if(newNameObj == "Palash"){
+            System.out.println("newNameObj == \"Palash\":Same");
+        }else{
+            System.out.println("newNameObj == \"Palash\" not Same");
+        }
+
+        if(name == newNameObj){
+            System.out.println("Same");
         }else{
             System.out.println("Not same");
         }
 
         // In comparison operator == memory references are checked
-        // In case of primtive datatype value checked
-        // In non primitive C_Datatypes_In_Java.datatypes reference is checked
+        // In case of primtive datatype value should be checkedby ==
+        // In non primitive Datatypes reference is should be checked by .equals
 
         // Use equals method in this case
 
-        if(name.equals(newName)){
+        if(name.equals(newNameObj)){
             System.out.println("Names are equal");
         }else{
             System.out.println("Names are not equal");
@@ -73,15 +88,15 @@ public class StringJava {
         // equals also checks case
         name = "PALASH";
 
-        if(name.equals(newName)){
+        if(name.equals(newNameObj)){
             System.out.println("Names are equal");
         }else{
-            System.out.println("Names are not equal");
+            System.out.println("Names are not equal cap");
         }
 
 
         // Use equalsIgnoreCase
-        if(name.equalsIgnoreCase(newName)){
+        if(name.equalsIgnoreCase(newNameObj)){
             System.out.println("Names are equal");
         }else{
             System.out.println("Names are not equal");

@@ -6,13 +6,13 @@ public class Datatypes {
 
         /*
             boolean data type
-            byte data type
-            char data type
-            short data type
-            int data type
-            long data type
-            float data type
-            double data type
+            byte    data type
+            char    data type
+            short   data type
+            int     data type
+            long    data type
+            float   data type
+            double  data type
 
             Data Type	Default Value	Default size
             boolean 	false	        1 bit

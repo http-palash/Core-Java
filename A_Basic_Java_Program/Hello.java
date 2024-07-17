@@ -10,9 +10,9 @@ public class Hello { //this is a block
 
 
 
-        //        C_Datatypes_In_Java.datatypes
+        // datatypes
 
-        //        int char float double boolean long short byte
+        // int char float double boolean long short byte
         // semicolon at the end of expression
 
     }

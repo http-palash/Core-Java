@@ -2,15 +2,16 @@ package G_Loops_In_Java;
 
 public class continueJava {
 
-
+    //The continue statement passes control to the next iteration of the nearest
+      //  enclosing do , for , or while statement in which it appears,
     public static void main(String[] args) {
 
-//        for (int i = 0; i < 30; i++) {
-//
-//            if(i%2==0 || i%3==0 || i%5 ==0 )  continue;
-//            System.out.println(i);
-//
-//        }
+    //        for (int i = 0; i < 30; i++) {
+    //
+    //            if(i%2==0 || i%3==0 || i%5 ==0 )  continue;
+    //            System.out.println(i);
+    //
+    //        }
 
         // Nested loops for patterns matrix etc, more nesting = less optimized code
 

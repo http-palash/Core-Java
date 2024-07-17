@@ -1,7 +1,6 @@
 package R_Encapsulation;
 import R_Encapsulation.Packages.Person;
 
-public class Encapsulation {
 
     /*
         Java encapsulation:
@@ -22,11 +21,15 @@ public class Encapsulation {
          This can be used to achieve data hiding
 
          Encapsulation in itself is not data hiding.
-     */
+ */
+
+public class Encapsulation {
 
     public static void main(String[] args) {
         Person p1 = new Person();
         p1.setAge(5);
+        System.out.println(p1.count);
+        System.out.println(Person.count);
         System.out.println(p1.getAge());
 
 

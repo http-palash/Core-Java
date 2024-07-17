@@ -24,6 +24,15 @@ abstract class Vehicle{
     void honks(){
         System.out.println("Vehicle honks");
     }
+
+    /*
+        abstract void hey(){
+          not allowed in abstract class
+        }
+        default void hey(){
+          not allowed in abstract class
+        }
+     */
 }
 
 //abstract class Car extends Vehicle{ OR

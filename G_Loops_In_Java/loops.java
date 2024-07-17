@@ -5,9 +5,11 @@ public class loops {
 
     public static void main(String[] args) {
 
+        //A "For" Loop is used to repeat a specific block of code a known number of times.
+
         // for (initialization, test condition, Inc/dec)
         for(int i = 0; i < 10; i++){
-          System.out.println("A_Basic_Java_Program.Hello world");
+          System.out.println("Hello world");
         }
 
         // table

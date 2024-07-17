@@ -15,7 +15,6 @@ public class methods {
     /*
         A method is a block of code or collection of statements or a set of code
         grouped together to perform a certain task or operation.
-
         It is used to achieve the reusability of code.
      */
 
@@ -41,13 +40,18 @@ public class methods {
             As mentioned earlier, a method can also have any number of parameters
 
      */
-
     public static void main(String[] args) {
 
-        System.out.println(args[0]);
 
-        for(String arg : args){
-            System.out.print(arg+" ");
+        try {
+            for (String arg : args) {
+                System.out.print(arg + " ");
+            }
+            System.out.println(args[0]);
+
+        }catch(Exception e){
+            System.out.println(e.fillInStackTrace());
+            System.out.println(e.getMessage());
         }
         System.out.println();
 
@@ -66,8 +70,9 @@ public class methods {
     }
 
 
+
     public static void greet(){
-        System.out.println("A_Basic_Java_Program.Hello Greetings of the day this is  static mathod can ");
+        System.out.println("Hello Greetings of the day this is  static mathod can ");
 
         //non_static_method(); //non-static method non_static_method() cannot be referenced from a static context
     }

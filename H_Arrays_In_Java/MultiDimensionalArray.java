@@ -40,8 +40,11 @@ public class MultiDimensionalArray {
         System.out.println("Min is : "+min+" and  Max is : "+max);
 
 
-        // two d or multidimensional arrays
-
+        /* two d or multidimensional arrays
+                A multidimensional array in JavaScript is an array of arrays.
+                It is a type of array that allows developers to store data
+                in a matrix-like structure.
+         */
         int mark[][] = new int[4][3];
 
         mark[0][0] = 12;

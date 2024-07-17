@@ -44,7 +44,8 @@ public class Interface {
 }
 
 interface Animal{
-        // public abstract void eat(same by default below)
+    // public abstract void eat(same by default below)
+    // public abstract by default
     void eat();
     void drinks();
     public static final int LEGS = 4;

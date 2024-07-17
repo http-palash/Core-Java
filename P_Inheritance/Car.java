@@ -57,29 +57,37 @@ public class Car  extends Vehicle {
     }
 
 
+    class Scooter {
+        void braking(Car car){
+            System.out.println(car.model+" with color "+ car.color+" is braking");
+        }
+    }
 
 
     void start() {
-
         Scooter scooterObj = new Scooter();
-        scooterObj.braking(this);
+        scooterObj.braking(this); // P_Inheritance.Car@6e8cf4c6 passed
+
         super.start();
-        System.out.println(this);
+
+        System.out.println(this); // prints reference P_Inheritance.Car@6e8cf4c6
         System.out.println(this.model+ " car is starting");
     }
 
-//    Car braking(){
-//        return this;
-//    }
+        //    Car braking(){
+        //        return this;
+        //    }
 
     public static void main(String[] args) {
         Car obj = new Car();
         obj.wheelsCount = 10; // value updated after default constructor
+        System.out.println("WheelsCount is : "+obj.wheelsCount);
         obj.color = "Yellow";
         obj.model = "Gwagon";
+
         obj.start();
-        obj.accelerate();
-        System.out.println(obj.wheelsCount);
+        
+        obj.accelerate(); // prints/call/goto parent class accelerate method
 
         // Object class in java - prebuilt class
         // obj.
@@ -134,11 +142,4 @@ public class Car  extends Vehicle {
         this is actual object
         super is just keyword not an object
      */
-    class Scooter {
-
-
-        void braking(Car car){
-            System.out.println(car.model+" is braking");
-        }
-    }
 

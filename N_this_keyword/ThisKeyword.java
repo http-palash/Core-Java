@@ -1,26 +1,26 @@
 package N_this_keyword;
 
+/*
+    this keyword:
+    In java, this keyword is used to refer to the current object inside a method
+    or a constructor.
+
+    We mostly use this keyword to remove any ambiguity in variable Names. We
+    can also use this to invoke methods of the current class or to invoke a
+    constructor of the current class
+ */
+
 public class ThisKeyword {
 
     public static void main(String[] args) {
         Complex num1 = new Complex();
         Complex num2 = new Complex(4,5);
 
-        // this keyword:
-        /*
-            In java, this keyword is used to refer to the current object inside a method
-            or a constructor.
-
-            We mostly use this keyword to remove any ambiguity in variable Names. We
-            can also use this to invoke methods of the current class or to invoke a
-            constructor of the current class
-         */
 
         System.out.println("Adding two complex num: ");
         Complex result = num1.add(num2);
         System.out.println(num1); // N_this_keyword.Complex@5f184fc6
         result.print();
-
 
     }
 }

@@ -2,6 +2,7 @@ package R_Encapsulation.Packages;
 
 public class Person{
 
+    public static int count = 0;
     private int age;
     private String name;
     boolean canBeChanged = true;

@@ -14,13 +14,13 @@ public class InnerClass {
 
     public static void main(String[] args) {
         // Toy toy = new Toy(); //invalid : non-static variable this cannot be referenced from a static context
-         Toy toy = new InnerClass().new Toy();
+         Toy toy = new InnerClass().new Toy(); // outerclass obj
         // InnerClass obj = new InnerClass();
         // Toy toy = obj.new Toy();
         toy.price = 50;
         System.out.println(toy.price);
 
-        PlayStation playstation = new InnerClass.PlayStation();
+        PlayStation playstation = new InnerClass.PlayStation(); // accessing direct by class name
 
 
     }

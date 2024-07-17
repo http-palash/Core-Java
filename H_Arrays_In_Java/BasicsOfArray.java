@@ -5,10 +5,12 @@ public class BasicsOfArray {
     public static void main(String[] args) {
 
 
-        //  How array works
-        //  Creating and declaring arrays
-        //  For each loop
-        //  Multidimensional arrays
+        /*
+            How array works
+            Creating and declaring arrays
+            For each loop
+            Multidimensional arrays
+        */
 
         //  Arrays are stored in contiguous memory [consecutive memory locations]
 
@@ -51,6 +53,9 @@ public class BasicsOfArray {
         System.out.println(marks.length);
 
         String names[] = {"Ram","Shyam","Rahul","Karan","Arjun"};
+
+        // string n = 'java: unclosed character literal';
+        // char c[] = 'java: unclosed character literal';
 
         for (int i = 0; i < names.length; i++) {
             System.out.println("Name "+(i+1)+" is : "+ names[i]);

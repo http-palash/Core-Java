@@ -41,15 +41,15 @@ public class math {
     }
 
     public static int  min(int a, int b){
-        if(a < b) return a;
-        return b;
+//        if(a < b) return a;
+//        return b;
+        return a < b ? a : b;
     }
 
     public static int getRandom(int a, int b){
         // [0,1)
         // return (int) (Math.random()*6)+1;
-
-        // (random 0 - 0.99 )* (diff+1) + min no
-        return (int) (Math.random() * (b-a+1) + a);
+        // (random 0-0.99) * (diff+1) + min no
+                 return (int) (Math.random() * (b- a+1) + a);
     }
 }

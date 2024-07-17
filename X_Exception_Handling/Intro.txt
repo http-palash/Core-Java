@@ -1,0 +1,35 @@
+Exception - unexpected events occurs during program execution.
+
+It affects flow of program and program terminate abnormally
+
+
+
+
+Some resorns are:
+Invalid user formant
+Device failure
+Loss on network connnection
+
+Physical limitations
+code error
+opening unavailable expection
+
+
+Runtime exception : Due to programming error (Null pointer access, AOBI, Dividing number by zero )
+
+IO/Exception - Checked exception Compile time exception (while dealing with secondary memory)
+               (Try to open file that doesn't exist's, trying to read past the end of file, Semicolon)
+
+
+try - catch block - prevents abnormal termination of program used for exception handling
+
+
+Finally block - executes anyways doesnot executes on System.exit, Exception occurs in finally block, The death of a thread
+
+
+throw and throws
+
+Throws - we use in method declaration to declare the type of exception that might occur within it
+Throw - We use throw keyword to explicitly throw a single exception
+
+

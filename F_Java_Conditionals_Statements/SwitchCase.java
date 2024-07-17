@@ -11,7 +11,13 @@ public class SwitchCase {
         System.out.print("Enter day : ");
         float day = sc.nextFloat();
 
-        // Primitive C_Datatypes_In_Java.datatypes string char works only
+        /*
+          The switch statement or switch case in java is a multi-way branch statement.
+          Primitive datatypes string char works only.
+          The Java switch statement executes one statement from multiple conditions.
+          It is like if-else-if ladder statement.
+        */
+
         switch ((int)day){ //float not works in switch
             case 1: case 10:
                 System.out.println("Today is Sunday");

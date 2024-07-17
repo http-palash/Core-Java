@@ -4,22 +4,29 @@ import java.lang.Math;
 public class StaticBlock {
 
 
+    static int count = 0 ;
     public  static  final String ScientificName = "Homo Sapiens";
 
     static {
         System.out.println("Called from static block 1");
+        count++;
     }
     static {
         System.out.println("Called from static block 2");
+        count++;
+
     }
 
-    int count = 90 ;
 
     static {
         System.out.println("Called from static block 3");
+        count++;
+
     }
     static {
-        System.out.println("Called from static block 3");
+        System.out.println("Called from static block 4");
+        count++;
+
     }
 
     public static void main(String[] args) {
@@ -30,7 +37,7 @@ public class StaticBlock {
         System.out.println(Math.PI);
 
         /*
-            4.The modification of the static field value is not allowed/ discouraged use public static final in this case
+            +4.The modification of the static field value is not allowed/ discouraged use public static final in this case
             eg: value of Math.pi (public static final)
          */
     }

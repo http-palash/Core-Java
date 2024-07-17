@@ -5,12 +5,14 @@ public class whileLoop {
 
     public static void main(String[] args) {
 
-        // while loop : only condition known don't know iteration
+        // while loop : only condition known don't know iterations
         // test condition here
         // test condition updated inside loop
         // like finding number of  nodes in link-list
         // condition checked first
 
+        //A control flow statement that allows code to be executed repeatedly
+        // based on a given Boolean condition.
 
         int i = 0;
 

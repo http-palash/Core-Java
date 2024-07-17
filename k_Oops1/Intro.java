@@ -1,18 +1,18 @@
 package k_Oops1;
 
-// Multiple class can be created
+// Multiple classes can be created
 // Only public class can be one which has main function
 
-public class Intro {
-
     /*
-        1.Class and Objects
-        2.Constructors
-        3.Method and constructor Overloading
-        4.This keyword in java
-     */
 
-    /*
+        a.Class and Objects
+        b.Constructors
+        c.Method and constructor Overloading
+        d.This keyword in java
+
+          A class can also be seen as user defined datatype where any object of
+          defined datatype has some predefined properties and behaviour
+
        1. Class is  a blueprint which defines some properties and behaviours.
           And object is an instance of a class which has those properties and
           behaviours attached
@@ -26,13 +26,20 @@ public class Intro {
           that must be implemented by its objects.
 
        7. A class can also be seen as user defined datatype where any object of
-          defined datatype has somme predefined properties and behaviour
-     */
+          defined datatype has some predefined properties and behaviour
+    */
+
+public class Intro {
+
     public static void main(String[] args) {
 
         // Scanner, Math, String class prebuilt class
 
-        // cCass is non-primitive datatype
+        // Class is non-primitive user-defined datatype
+        // Metaspace(In ram) <= stores classes metadata
+        // Object stored in heap memory
+        // Cant directly interact with class (logical/virtual entity)
+        // We can interact through object physical entity
 
         Dog d1 = new Dog();
         d1.name = "Bruno";
@@ -45,11 +52,6 @@ public class Intro {
         d2.name="Cutiepie";
         d2.walk();
 
-        // Metaspace(In ram) <= stores classes metadata
-        // Object stored in heap memory
-        // Cant diectly interact with class (logical/virtual entity)
-        // We can interact through object physical entity
-
 
         Complex num1 = new Complex();
         num1.a = 3;
@@ -59,14 +61,14 @@ public class Intro {
     }
 }
 
+
 class Dog{
+
     String name;
     int age;
-
     void walk(){
         System.out.println(name + " is walking");
     }
-
     void bark(){
         System.out.println(name+" is Barking");
     }
@@ -78,8 +80,8 @@ class Cat{
 
 // Creating non-primitive datatype
 class Complex{
-    int a,b;
 
+    int a,b;
     void print(){
         System.out.println(a+" + "+b+"i");
     }
